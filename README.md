@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://codesignal.com/">
-    <img src="images/code_signal.jpg" alt="Logo" width="200" height="200">
+    <img src="images/CodeSignal_Logo.jpg" alt="Logo" width="200" height="200">
   </a>
 
 <h3 align="center">Code Signal Solutions and Explanations</h3>
