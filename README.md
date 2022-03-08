@@ -32,7 +32,7 @@
 
 <h3 align="left">Other things needed to take into consideration</h3>
 <p align="left">
-   If you would like to take to contribute to this repo please follow the steps on this <a href="https://www.dataschool.io/how-to-contribute-on-github/">webpage</a>. In the pull request please put the best way to communicate with you, so I can get in touch if I have questions.
+   If you would like to contribute to this repo please follow the steps on this <a href="https://www.dataschool.io/how-to-contribute-on-github/">webpage</a>. In the pull request please put the best way to communicate with you, so I can get in touch if I have questions.
 </p>
 
 <!-- CONTACTS -->
