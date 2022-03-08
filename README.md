@@ -27,12 +27,14 @@
 <!-- ABOUT THE REPO -->
 <h2 align="left">About The Repository</h2>
 <p align="center">
-   How much is staying at your rental property worth? This can be a tricky number to set in 2022 with people antsy after the 2020 pandemic, the housing market rising to new highs, etc. This app is built to help hosts predict the price of their daily rate during the all seasons of the year. As people who have stayed at rentals on several occasions we take into account as much as possible when in comes to what your potential guests will look at and set an optimal price for your rental. 
+  This repository is currently being made so this about section won't have much content, but once I start doing the challenges I'll have a better idea of what to put in this file.  
 </p>
 
 <h3 align="left">Other things needed to take into consideration</h3>
 <p align="left">
-   If you would like to contribute to this repo please follow the steps on this <a href="https://www.dataschool.io/how-to-contribute-on-github/">webpage</a>. In the pull request please put the best way to communicate with you, so I can get in touch if I have questions.
+  If there are any errors or anything I missed or should include please raise an issue through github's issues.
+
+  If you would like to contribute to this repo please follow the steps on this <a href="https://www.dataschool.io/how-to-contribute-on-github/">webpage</a>. In the pull request please put the best way to communicate with you, so I can get in touch if I have questions.
 </p>
 
 <!-- CONTACTS -->
