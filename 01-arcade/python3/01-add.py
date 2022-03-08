@@ -1,33 +1,51 @@
 """
-Code Signal instructions and examples
+Write a function that returns the sum of two numbers.
+
+Example: For param1 = 1 and param2 = 2, the output should be
+add(param1, param2) = 3.
 """
 
-def first_attempt_solution(variable1, variable2):
+# Imports that are automatically included:
+import json
+import math
+import string
+import re
+import random
+import sys
+from tempfile import TemporaryFile
+import traceback
+import functools
+from collections import OrderedDict
+
+import numpy
+import sortedcontainers
+
+def add(variable1, variable2):
     """ 
-    function description
+    First attempt: Adding together variable1 and variable2 with an addition sign
     """
-    return output
+    return variable1+variable2
 
 """
-process explanation for first_attempt_solution
+There isn't any different way to add numbers together unless they are in a list, set or array.
 """
 
-def after_google_solution(variable1, variable2):
+def add(variable1: float, variable2: float) -> float:
     """ 
-    function description
+    Rigorous Attempt: Adding together variable1 and variable2 with an addition sign
+    -INPUT-
+    variable1: float
+    variable2: float
+    -OUTPUT-
+    float
     """
-    return output
+    try:
+        return variable1+variable2
+    except TypeError:
+        print('Oops! One of the inputs was not a valid number. Try again...')
+        return
 
 """
-process explanation for after_google_solution
-"""
-
-def rigorous_solution(variable1, variable2):
-    """ 
-    function description
-    """
-    return output
-
-"""
-process explanation for rigorous_solution
+Added an exception to the function to make sure that the variables being fed through the function
+are floats or int. 
 """
