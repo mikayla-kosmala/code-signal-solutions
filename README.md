@@ -26,8 +26,9 @@
 
 <!-- ABOUT THE REPO -->
 <h2 align="left">About The Repository</h2>
-<p align="center">
-  This repository is currently being made so this about section won't have much content, but once I start doing the challenges I'll have a better idea of what to put in this file.  
+<p align="left">
+  This repository contains is in the progress of containing all of the python challenges that Code Signal has on its website as of 3/7/2022. Sorry there isn't much of a description at the moment. Once I start uploading files it will update it.
+  This repo is for educational purposes and learning. Not for someone to copy and paste my code in the file
 </p>
 
 <h3 align="left">Other things needed to take into consideration</h3>
