@@ -53,11 +53,16 @@ The idea behind this was to remove each element in the list and then check to se
 To see 
 """
 
-def after_google_solution(variable1, variable2):
+def make_array_consecutive_2(sequence):
     """ 
     function description
     """
-    return 
+    for i in range(len(sequence)):
+        element = sequence.pop(i)
+        if sequence == sorted(sequence):
+            return True
+        sequence.insert(i,element)
+    return False
 
 """
 process explanation for after_google_solution
