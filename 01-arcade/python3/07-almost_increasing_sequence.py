@@ -31,19 +31,30 @@ from collections import OrderedDict
 import numpy
 import sortedcontainers
 
-def make_array_consecutive_2(sequence):
-    """ 
-    Return True if the following list be strictly increasing if one element is removed. Else False.
+def matrix_elements_sum(matrix):
     """
-    output_list=[]
-    for i in range(len(sequence)+1):
-        new_sequence = sequence[:i-1]+sequence[i:]
-        print(new_sequence)
-        output=True
-        for j in range(len(new_sequence)-1):
-            output = output and new_sequence[j] < new_sequence[j+1]
-        output_list.append(output)
-    return len(set(output_list))==2
+    Given matrix, a rectangular matrix of integers, where each value represents 
+    the cost of the room, your task is to return the total sum of all rooms that
+    are suitable for the CodeBots (ie: add up all the values that don't appear below a 0).
+    """
+    suitable_cols=[]
+    count=0
+    for i in range(len(matrix[0])):
+        if matrix[0][i]!=0:
+            suitable_cols.append(i)
+            count+=matrix[0][i]
+    print(suitable_cols)
+    for j in suitable_cols:
+        print('suitable',j)
+        for k in range(1,len(matrix)):
+            print('row',k)
+            print("hi",matrix[k][j])
+            if matrix[k][j]!=0:
+                count+=matrix[k][j]
+            else:
+                print('removing',j)
+                break
+    return count
 
 """
 The function above worked for all the free tests, but exceded the time limit exceeded for the hidden tests
@@ -53,26 +64,53 @@ The idea behind this was to remove each element in the list and then check to se
 To see 
 """
 
-def make_array_consecutive_2(sequence):
+def first_bad_pair(sequence):
+    """Return the first index of a pair of elements where the earlier
+    element is not less than the later elements. If no such pair
+    exists, return -1."""
+    for i in range(len(sequence)-1):
+        if sequence[i] >= sequence[i+1]:
+            return i
+    return -1
+    
+def almost_increasing_sequence(sequence):
+    """ 
+    Return True if the following list be strictly increasing if one element is removed. Else False.
+    """    
+    j = first_bad_pair(sequence)
+    if j == -1:
+        return True  # List is increasing
+    if first_bad_pair(sequence[j-1:j] + sequence[j+1:]) == -1:
+        return True  # Deleting earlier element makes increasing
+    if first_bad_pair(sequence[j:j+1] + sequence[j+2:]) == -1:
+        return True  # Deleting later element makes increasing
+    return False  # Deleting either does not make increasing
+
+
+"""
+To save on the number of iterations we make a new function first_bad_pai
+"""
+
+def almost_increasing_sequence(sequence):
     """ 
     function description
     """
-    for i in range(len(sequence)):
-        element = sequence.pop(i)
-        if sequence == sorted(sequence):
-            return True
-        sequence.insert(i,element)
-    return False
+    droppped = False
+    last = prev = min(sequence) - 1
+    for elm in sequence:
+        if elm <= last:
+            if droppped:
+                return False
+            else:
+                droppped = True
+            if elm <= prev:
+                prev = last
+            elif elm >= prev:
+                prev = last = elm
+        else:
+            prev, last = last, elm
+    return True
 
-"""
-process explanation for after_google_solution
-"""
-
-def rigorous_solution(variable1, variable2):
-    """ 
-    function description
-    """
-    return
 
 """
 process explanation for rigorous_solution
