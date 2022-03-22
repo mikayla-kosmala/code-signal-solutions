@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://www.python.org/download/releases/3.0/">
-    <img src="images/python-logo-master-v3-TM.png.jpg" alt="Logo" width="400" height="200">
+    <img src="https://github.com/mikayla-kosmala/code-signal-solutions/blob/main/images/python-logo-master-v3-TM.png" alt="Logo" width="300" height="100">
   </a>
 
 <h3 align="center">Python Arcade Solutions</h3>
@@ -30,7 +30,7 @@ This is all about Python3 solutions for Arcade Challenges on Code Signal. I have
         <li align="left">Rigorous solution</li>
     </ul>
     Each solution/attempt will have a description of how I came up with the solution below the function.
-    <img src="images/python3-file-layout.png.jpg" width="400" height="200">
+    <img src="https://github.com/mikayla-kosmala/code-signal-solutions/blob/main/images/python3-file-layout.png" width="400" height="700">
 </p>
 
 <h3 align="left">Other things needed to take into consideration</h3>
